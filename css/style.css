@@ -1,0 +1,661 @@
+/* Підключення  шрифтів */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Lobster&family=Poppins:wght@400;700&display=swap");
+
+@font-face {
+    font-family: "Helvetica Neue Condensed Black";
+    src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format('woff2'),
+    url("../fonts/HelveticaNeue-CondensedBlack.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/HelveticaNeue.woff2") format('woff2'),
+    url("../fonts/HelveticaNeue.woff2") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	/* padding: 20px; */
+}
+/* Убираем лишний отступ. Вариант №1 */
+/*
+.text *:last-child {
+	margin-bottom: 0;
+}
+*/
+/* Убираем лишний отступ. Вариант №2 
+ для любых объектов внутри объектов с классом .text
+ добавить внешний отступ 20px вниз, 
+ но кроме последнего объекта
+
+.text *:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}*/
+/* ------------------------------ */
+.task{
+    margin: 30px auto;
+    box-shadow: 5px 5px 5px grey;
+    word-spacing: 20px;
+}
+h2{
+    font-family: "Lobster", cursive;
+    font-size: 35px;
+    text-align: center;
+}
+.btn-block{
+    font-family: "Lobster", cursive;
+    text-align: left;
+    max-width: 300px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px gray;
+    background: url("../img/leaf.jpg") 0 0/cover no-repeat;
+    margin: 15px;
+    display: inline-block;
+}
+.button{
+    margin-top: 10px;
+    max-width: 80px;
+    padding: 5px;
+    text-align: center;
+    background:peru;
+    border-radius: 5px;
+}
+.button:hover{
+    background: brown;
+}
+.phone-block{
+    font-family: "Lobster", cursive;
+    text-align: left;
+    max-width: 300px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px gray;
+    background: url("../img/icecream.jpg") 0 0/cover no-repeat;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin: 15px;
+}
+.phone-block:hover{
+    background: url("../img/blossom.jpg") 0 0/cover no-repeat;
+}
+.phone-elements{
+    font-family: "Lobster", cursive;
+    text-align: left;
+    max-width: 300px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px gray;
+    background: url("../img/lime.jpg") 0 0/cover no-repeat;
+    display: inline-block;
+    margin: 15px;
+}
+.phone-elements>p:hover{
+    margin: 5px;
+    background-color: chartreuse;
+}
+.loto{
+    font-family: "Lobster", cursive;
+    text-align: center;
+    max-width: 1200px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px gray;
+    margin: 15px auto;
+    background: url("../img/blossom.jpg") 0 0/cover no-repeat;
+}
+.loto-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.loto-img{
+    display: inline-block;
+    margin: 15px;
+    min-width: 300px;
+}
+.loto-img:hover{
+    background: url("../img/dino.png") 0 0 no-repeat;
+}
+.link-block{
+    font-family: "Lobster", cursive;
+    text-align: center;
+    font-size: 25px;
+    max-width: 300px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px gray;
+    margin: 15px auto;
+}
+.link{
+    color: green;
+}
+.link:visited{
+    color:darkblue;
+}
+.link:hover{
+    color:darkred;
+    text-decoration: underline;
+}
+.link:active{
+    color:darkmagenta;
+}
+
+.btn{
+    max-width: 300px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+    margin: 15px;
+    background: darkseagreen;
+    padding: 5px;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 5px green;
+}
+.btn:focus{
+    background-color: hotpink;
+}
+.link-btn-one:focus{
+    color: indigo;
+}
+.link-btn-two:focus{
+    color:lawngreen;
+    outline: 3px dotted mediumblue;
+}
+
+.show-block{
+    max-width: 300px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    background: url("../img/leaf.jpg") 0 0/cover no-repeat;
+    box-shadow: 5px 5px 5px grey;
+    display: inline-block;
+}
+.show-block-text{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.show-block-link{
+    margin-bottom: 10px;
+}
+.hide-block{
+    max-width: 300px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    background: url("../img/leaf.jpg") 0 0/cover no-repeat;
+    box-shadow: 5px 5px 5px grey;
+    display: none;
+}
+.hide-block:target{
+    display: inline-block;
+}
+
+.fc-block{
+    max-width: 300px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px;
+    display: inline-block;
+    background: url("../img/icecream.jpg") 0 0/cover no-repeat;
+    box-shadow: 5px 5px 5px grey;
+}
+.fc-block p{
+    margin-bottom: 10px;
+}
+.fc-block p:first-child{
+    color: indigo;
+}
+.fc-block :first-child{
+    color: rgb(130, 52, 0);
+}
+
+.ft-block,
+.foft-block{
+    max-width: 300px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px;
+    display: inline-block;
+    background: url("../img/flowers.jpg");
+    box-shadow: 5px 5px 5px grey;
+}
+.ft-block span:first-of-type{
+    color: mediumorchid;
+}
+.ft-block p:first-of-type{
+    color: mediumvioletred;
+}
+.foft-block :first-of-type{
+    color: olive;
+}
+
+.lc-block,
+.lofc-block{
+    max-width: 300px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px;
+    display: inline-block;
+    background: url("../img/leaf.jpg");
+    box-shadow: 5px 5px 5px grey;
+}
+.lc-block span:last-child{
+    color: olive;
+}
+.lc-block p:last-of-type{
+    color: orange;
+}
+.lofc-block :last-of-type{
+    color: seagreen;
+}
+
+.nth-block{
+    max-width: 300px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px;
+    display: inline-block;
+    background: url("../img/leaf.jpg");
+    box-shadow: 5px 5px 5px grey;
+}
+.nth-block p{
+    margin-bottom: 10px;
+}
+.nth-block p:nth-child(odd){
+    color: seagreen;
+}
+.nth-block p:nth-child(even){
+    color: sienna;
+}
+.nth-block span:nth-child(odd){
+    color: seagreen;
+}
+.nth-block span:nth-child(even){
+    color: sienna;
+}
+
+.fline-block,
+.flet-block {
+    max-width: 300px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px;
+    display: inline-block;
+    background: url("../img/icecream.jpg") 0 0/cover no-repeat;
+    box-shadow: 5px 5px 5px grey;
+}
+.fline-block p::first-line{
+    color: slateblue;
+}
+.flet-block p::first-letter{
+    color:tomato;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.list-block{
+    max-width: 300px;
+    font-family: "Lobster", cursive;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    padding: 5px;
+    display: inline-block;
+    box-shadow: 5px 5px 5px grey;
+}
+.list-block li{
+    padding: 0 0 10px 0;
+}
+.list-block li::before {
+    content: "♥";
+    color:tomato;
+    display: inline-block;
+	vertical-align: top;
+	margin: 0px 15px 0px 0px;
+}
+.list-block li::after{
+    content: "→";
+    color:slateblue;
+    display: inline-block;
+    vertical-align: top;
+}
+.list-block li:hover::before {
+    color:springgreen;
+}
+
+.p-block{
+    max-width: 500px;
+    display: inline-block;
+    font-family: "Lobster", cursive;
+    text-align: left;
+    font-size: 20px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px grey;
+}
+.p-block p{
+    padding: 0 0 10px 0;
+}
+.p-block p::before{
+    content: url(../img/dino.png);
+    /* display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: 25%;  Спроба вставити картинку і відрегулювати її розміри. Регулюється за умови, що картинка в background*/
+}
+
+.ol-block{
+    max-width: 500px;
+    display: inline-block;
+    font-family: "Lobster", cursive;
+    text-align: left;
+    font-size: 20px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px grey;
+}
+.ol-block li:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+.ol-block {
+	counter-reset: item;
+}
+.ol-block li::before {
+	counter-increment: item;
+	content: counter(item) ")";
+	display: inline-block;
+	vertical-align: top;
+	color: greenyellow;
+	margin: 0px 10px 0px 0px;
+}
+.ol-block li::after{
+    content: "";
+    background-color: greenyellow;
+    height: 15px;
+    display: block;
+}
+.ol-block li:hover::after{
+    background-color: hotpink;
+}
+
+.sp-block{max-width: 500px;
+    display: inline-block;
+    font-family: "Lobster", cursive;
+    text-align: left;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px grey;
+}
+.sp-block p:not(:last-child){
+    padding: 0 0 10px 0;
+}
+
+/* Блок из макета (Car Repair and Doggie) */
+.doggie{
+    max-width: 1200px;
+    margin: 30px auto;
+    box-shadow: 5px 5px 5px grey;
+}
+.subtitle{
+    max-width:436px;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #5D62B5;
+    background: url("../img/overline_mark.png") 0 0 no-repeat;
+    padding: 2px 0 0 32px;
+    margin-bottom: 33px;
+    }
+.title{
+    font-family: "Roboto";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 68px;
+}
+.minis{
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    vertical-align: top;
+}
+.mini{
+    display: inline-block;
+    width: 364px;
+}
+.miniimg{
+    display: inline-block;
+    vertical-align: top;
+    width: 86px;
+    height: 63px;
+}
+.miniblock{
+    max-width: 235px;
+    display: inline-block;
+    vertical-align: top;
+}
+.minititle{
+    font-family: "Roboto";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #F2726F;
+}
+.minitext{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    color: #4B4B4B;
+}
+.mini__item1 .miniimg::before{
+    content: "";
+    display: block;
+    width: 63px;
+    height: 63px;
+    background: url("../img/dog_love_24x.png") 0 0 no-repeat;
+}
+.mini__item2 .miniimg::before{
+    content: "";
+    display: block;
+    width: 63px;
+    height: 63px;
+    background: url("../img/dog_vet_24x.png") 0 0 no-repeat;
+}
+.mini__item3 .miniimg::before{
+    content: "";
+    display: block;
+    width: 63px;
+    height: 63px;
+    background: url("../img/dog_stream_24x.png") 0 0 no-repeat;
+}
+
+.hf-block{
+    max-width: 255px;
+    background:  #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 24px 24px 60px 24px;
+    margin: 30px;
+}
+.hf-title{
+    font-family: Helvetica Neue;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2750000059604645px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.hf-title::after{
+    content: "";
+    display: block;
+    width: 56px;
+    height: 2px;
+    margin: 15px 0 0 0;
+    background-color: #34C759;
+}
+.hf-text{
+    font-family: Helvetica Neue;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.16249999403953552px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+.hf-block :not(:last-child){
+    margin-bottom: 24px;
+}
+/* .hf-title:hover:after{
+    background-color: #191919;
+}
+.hf-block:hover{
+    background-color: #34C759;
+} */
+
+
+
+/*  */
+.inspections{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-align: center;
+    max-width: 324px;
+    padding: 50px 44px;
+    box-shadow: 3px 3px 3px gray;
+    margin: 30px;
+    display: inline-block;
+}
+.inspections-img{
+    margin-bottom: 33px;
+}
+.inspections-title{
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #02133C;
+    margin-bottom: 20px;
+}
+.inspections-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    color: #4B4B4B;
+}
+
+.provide{
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    font-style: normal;
+    max-width: 450px;
+    padding: 15px;
+    box-shadow: 3px 3px 3px gray;
+    margin: 30px;
+    display: inline-block;
+}
+.provide-title{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0.800000011920929px;
+    max-width: 374px;
+    margin-bottom: 20px;
+}
+.provide-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1.149999976158142px;
+    max-width: 374px;
+    margin-bottom: 40px;
+}
+.provide-btn{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: #F78434;
+    border-radius: 29px;
+    max-width: 172px;
+    text-align: center;
+    padding: 18px 39px;
+}
